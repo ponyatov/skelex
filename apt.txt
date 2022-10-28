@@ -1,0 +1,6 @@
+git make curl
+code doxygen
+g++ flex bison
+libreadline-dev
+libsdl2-dev
+libpmem-dev
