@@ -1,0 +1,9 @@
+{
+  "livePreview": false,
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "/.+pdf/",
+    "/.+.pdf$/",
+    "/.*.pdf$/"
+  ]
+}

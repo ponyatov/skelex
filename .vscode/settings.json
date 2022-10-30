@@ -1,6 +1,13 @@
 {
     "multiCommand.commands": [
         {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; make doxy \u000D"}}]
+        },
+        {
             "command": "multiCommand.f12",
             "sequence": [
                 "workbench.action.files.saveAll",
@@ -20,4 +27,13 @@
     "workbench.tree.indent": 16,
     "git.ignoreLimitWarning": true,
     "git.enabled": false,
+
+    // clang-format
+    "clang-format.executable": "clang-format",
+    "clang-format.fallbackStyle": "Google",
+    "clang-format.style": "file",
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
 }

@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "8c6244ab3140a417",
+    "type": "split",
+    "children": [
+      {
+        "id": "624bfefafe265783",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f86aa13583e3ba1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "4828df95e0ba3c8e"
+          }
+        ]
+      },
+      {
+        "id": "0c47ed6801c6821f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b98545b186b04c31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "4828df95e0ba3c8e"
+          },
+          {
+            "id": "61e8ce924b8f8e7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "4828df95e0ba3c8e"
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2416f602eaeb3694",
+    "type": "split",
+    "children": [
+      {
+        "id": "06fdedd257a57bdb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed89d79df5e3bfde",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "19bd17eb8c466679",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "45975cc88057d2a1",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "45aa87c5da575167",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5283427d74a1f9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09837706e355a9ba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a7433a569c17b52c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "77b72e4da6d7a0c7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce5ecce0950ea498",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f86aa13583e3ba1b",
+  "lastOpenFiles": [
+    "index.md",
+    "README.md",
+    "пустая программа.md",
+    "общие принципы стековой машины.md",
+    "Forth/thinking.md",
+    "Forth/Форт.md",
+    "Forth/starting.md",
+    "kelly.md",
+    "thinking.md",
+    "starting.md"
+  ]
+}

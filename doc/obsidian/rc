@@ -1,0 +1,4 @@
+#!/bin/sh
+git pull -v &
+git gui &
+obsidian obsidian://`pwd` $OBSIDIAN &

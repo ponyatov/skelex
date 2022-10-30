@@ -1,0 +1,17 @@
+PROJECT_NAME           = "skelex"
+PROJECT_BRIEF          = "скелетон языка программирования"
+PROJECT_LOGO           = doc/logo.png
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = docs
+INPUT                  = doc/obsidian/README.md src inc \
+                         doc/obsidian/index.md "doc/obsidian/intro/О проекте.md" \
+                         "doc/obsidian/intro/общие принципы стековой машины.md" \
+                         "doc/obsidian/intro/установка ПО.md" doc/obsidian/make/install.md
+USE_MDFILE_AS_MAINPAGE = doc/obsidian/README.md
+WARN_IF_UNDOCUMENTED   = NO
+RECURSIVE              = YES
+EXCLUDE                = src/AtomVM src/wasm-micro-runtime
+FILE_PATTERNS         += *.lex *.yacc
+EXTENSION_MAPPING      = lex=C++ yacc=C++
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
