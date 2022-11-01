@@ -75,18 +75,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gacd8617a8f2ac0de8bc1cc032cf449e19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#gacd8617a8f2ac0de8bc1cc032cf449e19">yyparse</a> ()</td></tr>
 <tr class="separator:gacd8617a8f2ac0de8bc1cc032cf449e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40cd1a77de77540bd03a4ffac7e5a68b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#ga40cd1a77de77540bd03a4ffac7e5a68b">yyerror</a> (string msg)</td></tr>
+<tr class="memdesc:ga40cd1a77de77540bd03a4ffac7e5a68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">обработчик синтаксических ошибок  <a href="#ga40cd1a77de77540bd03a4ffac7e5a68b">More...</a><br /></td></tr>
 <tr class="separator:ga40cd1a77de77540bd03a4ffac7e5a68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga5e36364965360da7b7cdfc2188e0af84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#ga5e36364965360da7b7cdfc2188e0af84">yylineno</a></td></tr>
+<tr class="memdesc:ga5e36364965360da7b7cdfc2188e0af84"><td class="mdescLeft">&#160;</td><td class="mdescRight">номер текущей строки  <a href="#ga5e36364965360da7b7cdfc2188e0af84">More...</a><br /></td></tr>
 <tr class="separator:ga5e36364965360da7b7cdfc2188e0af84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad9264b77d56b6971f29739e2bda77f51"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#gad9264b77d56b6971f29739e2bda77f51">yytext</a></td></tr>
 <tr class="separator:gad9264b77d56b6971f29739e2bda77f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46af646807e0797e72b6e8945e7ea88b"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#ga46af646807e0797e72b6e8945e7ea88b">yyin</a></td></tr>
+<tr class="memdesc:ga46af646807e0797e72b6e8945e7ea88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">текущий открытый файл для лексера  <a href="#ga46af646807e0797e72b6e8945e7ea88b">More...</a><br /></td></tr>
 <tr class="separator:ga46af646807e0797e72b6e8945e7ea88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53be452efd4ab470618a809085f3edcb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#ga53be452efd4ab470618a809085f3edcb">yyfile</a></td></tr>
-<tr class="memdesc:ga53be452efd4ab470618a809085f3edcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">текущий файл для <a class="el" href="group__parser.html#ga40cd1a77de77540bd03a4ffac7e5a68b">yyerror</a>.  <a href="#ga53be452efd4ab470618a809085f3edcb">More...</a><br /></td></tr>
+<tr class="memdesc:ga53be452efd4ab470618a809085f3edcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">имя текущего файла для <a class="el" href="group__parser.html#ga40cd1a77de77540bd03a4ffac7e5a68b">yyerror</a> (заполняется из <code>argv[]</code>)  <a href="#ga53be452efd4ab470618a809085f3edcb">More...</a><br /></td></tr>
 <tr class="separator:ga53be452efd4ab470618a809085f3edcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -106,6 +109,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>обработчик синтаксических ошибок </p>
 
 </div>
 </div>
@@ -156,7 +161,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>текущий файл для <a class="el" href="group__parser.html#ga40cd1a77de77540bd03a4ffac7e5a68b">yyerror</a>. </p>
+<p>имя текущего файла для <a class="el" href="group__parser.html#ga40cd1a77de77540bd03a4ffac7e5a68b">yyerror</a> (заполняется из <code>argv[]</code>) </p>
 
 </div>
 </div>
@@ -172,6 +177,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>текущий открытый файл для лексера </p>
+
 </div>
 </div>
 <a id="ga5e36364965360da7b7cdfc2188e0af84"></a>
@@ -185,6 +192,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>номер текущей строки </p>
 
 </div>
 </div>

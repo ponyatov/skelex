@@ -46,12 +46,15 @@ extern int fini(int errorcode) __attribute__((noreturn));
 /// @{
 
 extern int yylex();
+/// номер текущей строки
 extern int yylineno;
 extern char* yytext;
+/// текущий открытый файл для лексера
 extern FILE* yyin;
-/// текущий файл для @ref yyerror
+/// имя текущего файла для @ref yyerror (заполняется из `argv[]`)
 extern char* yyfile;
 extern int yyparse();
+/// обработчик синтаксических ошибок
 extern void yyerror(string msg);
 #include "skelex.parser.hpp"
 

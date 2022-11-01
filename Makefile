@@ -70,17 +70,23 @@ MERGE += Makefile .gitignore apt.txt
 MERGE += .vscode bin doc lib inc src tmp
 MERGE += $(S)
 
+GITI += doc/obsidian/.obsidian/workspace.json
+
 .PHONY: dev shadow release zip
 dev:
 	git push -v
-	git checkout $@ --force
+	git update-index --no-skip-worktree $(GITI)
+	git checkout $(GITI)
+	git checkout $@
 	git pull -v
 	git checkout shadow -- $(MERGE)
+	$(MAKE) doxy && git add -f docs
 
 shadow:
 	git push -v
 	git checkout $@
 	git pull -v
+	git update-index --skip-worktree $(GITI)
 
 release:
 	git tag $(NOW)-$(REL)
@@ -91,10 +97,7 @@ ZIP = tmp/$(MODULE)_$(NOW)_$(REL)_$(BRANCH).zip
 zip:
 	git archive --format zip --output $(ZIP) HEAD
 
-GITI += doc/obsidian/.obsidian/workspace.json
 # GITI += docs
 giti:
-	git update-index --no-skip-worktree $(GITI)
-#	git update-index --skip-worktree $(GITI)
 #	git update-index --assume-unchanged $(GITI)
 	git ls-files -v|grep obsidian/.obsidian
