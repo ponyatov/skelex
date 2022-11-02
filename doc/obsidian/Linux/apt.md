@@ -10,4 +10,5 @@ libreadline-dev
 libsdl2-dev
 libpmem-dev
 ```
+![[cmake/apt]]
 ![[make/install#Linux]]

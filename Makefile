@@ -8,6 +8,13 @@ BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 # tool
 CURL = curl -L -o
 CF   = clang-format
+CC   = gcc
+CXX  = g++
+
+# dir
+CWD = $(CURDIR)
+BIN = $(CWD)/bin
+SRC = $(CWD)/src
 
 # src
 C  += src/$(MODULE).cpp
@@ -26,8 +33,14 @@ all: bin/$(MODULE) $(F)
 	$^
 
 # rule
-bin/$(MODULE): $(C) $(H) $(CP) $(HP)
-	$(CXX) $(CFLAGS) -o $@ $(C) $(CP) $(L)
+
+# bin/$(MODULE): $(C) $(H) $(CP) $(HP)
+# 	$(CXX) $(CFLAGS) -o $@ $(C) $(CP) $(L)
+
+# build with cmake
+bin/$(MODULE): $(C) $(H) $(CP) $(HP) CMakeLists.txt
+	CC=$(CC) CXX=$(CXX) cmake -B tmp/cmake -S $(CWD)
+	$(MAKE) -C tmp/cmake
 
 tmp/$(MODULE).lexer.cpp: src/$(MODULE).lex
 	flex -o $@ $<
@@ -56,7 +69,7 @@ doc/Thinking_color.pdf:
 
 # install
 .PHONY: install update
-install: $(OS)_install doc
+install: $(OS)_install doc gz
 	$(MAKE) update
 update: $(OS)_update
 
@@ -65,10 +78,17 @@ Linux_update:
 	sudo apt update
 	sudo apt install -yu `cat apt.txt`
 
+gz: src
+
+src: src/AtomVM/README.md
+
+src/AtomVM/README.md:
+	git clone -o gh https://github.com/atomvm/AtomVM.git src/AtomVM
+
 # merge
 MERGE += Makefile .gitignore apt.txt
 MERGE += .vscode bin doc lib inc src tmp
-MERGE += $(S)
+MERGE += $(S) CMakeLists.txt
 
 GITI += doc/obsidian/.obsidian/workspace.json
 

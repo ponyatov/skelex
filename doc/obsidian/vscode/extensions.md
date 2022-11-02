@@ -20,7 +20,6 @@ touch .vscode/extensions.json
         // C++
         "ms-vscode.cpptools",
         "jeff-hykin.better-cpp-syntax",
-        "ms-vscode.cmake-tools",
         // flex/bison
         "daohong-emilio.yash",
         // repo local
@@ -28,3 +27,5 @@ touch .vscode/extensions.json
     ]
 }
 ```
+
+![[cmake/extensions]]

@@ -4,3 +4,5 @@ g++ flex bison
 libreadline-dev
 libsdl2-dev
 libpmem-dev
+erlang elixir
+cmake ninja-build

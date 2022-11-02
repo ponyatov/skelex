@@ -5,7 +5,7 @@
             "sequence": [
                 "workbench.action.files.saveAll",
                 {"command": "workbench.action.terminal.sendSequence",
-                    "args": {"text": "\u000D clear ; make doxy \u000D"}}]
+                    "args": {"text": "\u000D clear ; make cmake \u000D"}}]
         },
         {
             "command": "multiCommand.f12",
@@ -19,6 +19,7 @@
     // files
     "files.exclude": {
         "docs":true,
+        "src/AtomVM/.github":true,"src/AtomVM/.reuse":true,
     },
     
     // editor
@@ -27,6 +28,10 @@
     "workbench.tree.indent": 16,
     "git.ignoreLimitWarning": true,
     "git.enabled": false,
+
+    // cmake
+    "cmake.buildDirectory": "${workspaceFolder}/tmp/cmake",
+    "cmake.installPrefix": "${workspaceFolder}/bin",
 
     // clang-format
     "clang-format.executable": "clang-format",
