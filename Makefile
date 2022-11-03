@@ -99,6 +99,7 @@ dev:
 	git checkout $(GITI)
 	git checkout $@
 	git pull -v
+	rm -rf doc/obsidian
 	git checkout shadow -- $(MERGE)
 	$(MAKE) doxy && git add -f docs
 
