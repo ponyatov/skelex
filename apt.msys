@@ -2,3 +2,5 @@ git make curl
 doxygen clang
 gcc gdb flex bison
 cmake
+mingw-w64-x86_64-SDL2
+mingw-w64-x86_64-readline
