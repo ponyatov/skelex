@@ -16,7 +16,7 @@ https://t.me/metaLprogram
 			- `notifications`
 		- Generate token
 
-token: `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`
+token: `ghp_P`
 
 #### [[Telegram]]
 
