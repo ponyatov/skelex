@@ -33,7 +33,7 @@
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             },
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "MERGE +=",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +99,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -172,15 +173,15 @@
   },
   "active": "f86aa13583e3ba1b",
   "lastOpenFiles": [
-    "index.md",
+    "make/merge.md",
     "README.md",
-    "пустая программа.md",
-    "общие принципы стековой машины.md",
-    "Forth/thinking.md",
-    "Forth/Форт.md",
-    "Forth/starting.md",
-    "kelly.md",
-    "thinking.md",
-    "starting.md"
+    "index.md",
+    "vscode/package.md",
+    "vscode/extensions.md",
+    "vscode/менеджер расширений.md",
+    "vscode/расширение для языка программирования.md",
+    "vscode/tmLanguage.md",
+    "vscode/configuration.md",
+    "vscode/extension.md"
   ]
 }

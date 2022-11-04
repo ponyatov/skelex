@@ -21,6 +21,10 @@
         "docs":true,
         "src/AtomVM/.github":true,"src/AtomVM/.reuse":true,
     },
+    "files.associations": {
+        "*.ini":"skelex",
+        "*.s":"skelex"
+    },
     
     // editor
     "editor.tabSize": 4,

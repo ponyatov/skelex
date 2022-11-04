@@ -1,7 +1,8 @@
 ```Makefile
-MERGE += Makefile .gitignore apt.txt
+MERGE += Makefile README.md .gitignore .doxygen .clang-format
+MERGE += apt.txt
 MERGE += .vscode bin doc lib inc src tmp
-MERGE += $(S)
+MERGE += $(S) CMakeLists.txt
 ```
 ```Makefile
 .PHONY: dev shadow release zip

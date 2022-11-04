@@ -86,7 +86,8 @@ src/AtomVM/README.md:
 	git clone -o gh https://github.com/atomvm/AtomVM.git src/AtomVM
 
 # merge
-MERGE += Makefile .gitignore apt.txt
+MERGE += Makefile README.md .gitignore .doxygen .clang-format
+MERGE += apt.txt
 MERGE += .vscode bin doc lib inc src tmp
 MERGE += $(S) CMakeLists.txt
 
@@ -118,7 +119,14 @@ ZIP = tmp/$(MODULE)_$(NOW)_$(REL)_$(BRANCH).zip
 zip:
 	git archive --format zip --output $(ZIP) HEAD
 
-# GITI += docs
-giti:
+
+# git tricks
+
+skip:
+	git update-index --skip-worktree $(GITI)
+	git ls-files -v|grep obsidian/.obsidian
+
+noskip:
+	git update-index --no-skip-worktree $(GITI)
 #	git update-index --assume-unchanged $(GITI)
 	git ls-files -v|grep obsidian/.obsidian

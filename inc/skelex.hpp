@@ -53,9 +53,11 @@ extern char* yytext;
 extern FILE* yyin;
 /// имя текущего файла для @ref yyerror (заполняется из `argv[]`)
 extern char* yyfile;
+/// парсер
 extern int yyparse();
 /// обработчик синтаксических ошибок
 extern void yyerror(string msg);
+
 #include "skelex.parser.hpp"
 
 /// @}

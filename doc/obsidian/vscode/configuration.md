@@ -1,0 +1,1 @@
+## `.vscode/skelex.configuration.json`

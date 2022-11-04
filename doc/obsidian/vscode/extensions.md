@@ -1,7 +1,7 @@
 # `.vscode/extensions.json`
 ## рекомендуемый набор расширений [[VSCode]]
 
-hotkey: `Ctrl+Shift+X` filter: `@recommended`
+![[менеджер расширений#filter: @recommended]]
 
 ```shell
 touch .vscode/extensions.json
