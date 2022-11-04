@@ -1,0 +1,4 @@
+git make curl
+doxygen clang
+gcc flex bison
+cmake

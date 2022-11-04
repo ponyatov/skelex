@@ -80,7 +80,7 @@ Linux_update:
 
 Msys_install:
 Msys_update:
-	pacman -S `cat apt.msys`
+	pacman -S `cat apt.msys | tr '\r\n' ' ' `
 
 gz: src
 
