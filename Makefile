@@ -32,6 +32,11 @@ CFLAGS += -pipe -O0 -g2 -Iinc -Itmp
 all: bin/$(MODULE) $(F)
 	$^
 
+# format
+format: tmp/format_cpp
+tmp/format_cpp: $(C) $(H)
+	$(CF) -style=file -i $? && touch $@
+
 # rule
 
 # bin/$(MODULE): $(C) $(H) $(CP) $(HP)

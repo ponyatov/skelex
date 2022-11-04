@@ -9,6 +9,8 @@
 
 using namespace std;
 
+#include <SDL.h>
+
 /// @defgroup args Аргументы командной строки и инициализация
 /// @{
 

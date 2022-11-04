@@ -41,9 +41,10 @@ void yyerror(string msg) {
     abort();
 }
 
-void init(int argc, char* argv[]) {}
+void init(int argc, char* argv[]) { assert(!SDL_Init(SDL_INIT_VIDEO)); }
 
 int fini(int errorcode) {
     cout << endl;
+    SDL_Quit();
     exit(errorcode);
 }

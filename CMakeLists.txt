@@ -37,3 +37,7 @@ add_executable(skelex ${SOURCE})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_HOME_DIRECTORY}/bin)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_HOME_DIRECTORY}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_INSTALL_PREFIX})
+
+find_package(SDL2 REQUIRED)
+include_directories(skelex ${SDL2_INCLUDE_DIRS})
+target_link_libraries(skelex ${SDL2_LIBRARIES})
