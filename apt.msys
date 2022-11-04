@@ -1,4 +1,4 @@
 git make curl
 doxygen clang
-gcc flex bison
+gcc gdb flex bison
 cmake

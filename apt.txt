@@ -1,6 +1,6 @@
 git make curl
 code doxygen clang-format
-g++ flex bison
+g++ gdb flex bison
 libreadline-dev
 libsdl2-dev
 libpmem-dev

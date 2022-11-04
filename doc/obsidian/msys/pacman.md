@@ -14,3 +14,21 @@
 - поиск пакета
     `pacman -Ss`
 
+## установка через `apt.msys`
+
+```
+git make curl
+doxygen clang
+gcc gdb flex bison
+cmake
+```
+```Makefile
+Msys_install:
+Msys_update:
+    pacman -S `cat apt.msys | tr '\r\n' ' ' `
+```
+
+- [[cat]] выдает содержимое файла в пайп `|`
+- [[tr]] заменяет концы строк на пробелы
+- \`блок команд\` c левыми кавычками заменяется на результат их выполнения ([[stdout]])
+- [[pacman]] `-S` установка/обновление через пакетный менеджер
