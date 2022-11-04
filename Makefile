@@ -1,6 +1,6 @@
 # var
 MODULE = $(notdir $(CURDIR))
-OS     = $(shell uname -s)
+OS     = $(shell uname -o)
 NOW    = $(shell date +%d%m%y)
 REL    = $(shell git rev-parse --short=4 HEAD)
 BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
@@ -77,6 +77,10 @@ Linux_install:
 Linux_update:
 	sudo apt update
 	sudo apt install -yu `cat apt.txt`
+
+Msys_install:
+Msys_update:
+	pacman -S `cat apt.msys`
 
 gz: src
 
